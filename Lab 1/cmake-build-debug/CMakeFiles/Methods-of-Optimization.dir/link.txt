@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Methods-of-Optimization.dir/main.cpp.o  -o Methods-of-Optimization 

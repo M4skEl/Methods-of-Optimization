@@ -1,0 +1,3 @@
+/home/elisey/CLionProjects/Methods-of-Optimization/Lab 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/elisey/CLionProjects/Methods-of-Optimization/Lab 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/elisey/CLionProjects/Methods-of-Optimization/Lab 1/cmake-build-debug/CMakeFiles/Methods-of-Optimization.dir

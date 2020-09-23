@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elisey/CLionProjects/Methods-of-Optimization/Lab 1/main.cpp
+iostream
+-
+vector
+-
+string
+-
+map
+-
+
