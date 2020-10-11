@@ -174,17 +174,17 @@ std::pair<double, vector<double>> SimplexMethod(vector<double> &forcheck) {
   bool max;
   double finder = 0;
   //InputCondition(matrix, coeffs, freedom,finder);
-  matrix = {{1,  -2,},
+/*  matrix = {{1,  -2,},
             {-2, 1},
             {1,  1}};
   coeffs = {-1, 1};
-  freedom = {2, -2, 5};
-/*  matrix = {{4, 1,   1},
+  freedom = {2, -2, 5};*/
+  matrix = {{4, 1,   1},
             {1, 2,   0},
             {0, 0.5, 3}};
   coeffs = {-7, -4, -4};
-  freedom = {3, 3, 5};*/
-  max = false;
+  freedom = {3, 3, 5};
+  max = true;
   forcheck=coeffs;
   if (max) for (size_t t = 0; t < coeffs.size(); t++) forcheck[t] = -coeffs[t];
   /*  matrix = {{4, 2, 1},
