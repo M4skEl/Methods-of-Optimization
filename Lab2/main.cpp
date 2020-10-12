@@ -159,16 +159,6 @@ bool ContinueOptimized(vector<double> &coef) {
   return false;
 }
 
-/*
-int FindMinX(vector<vector<int>>& var ) {
-  int min = var[0][2];
-  for (size_t i = 0; i < var.size(); i++) {
-    if (min < var[i][2]) min=i;
-  }
-  return min;
-}
-*/
-
 vector<double> DoAnswer(vector<vector<int>> variables, vector<double> &free) {
   vector<double> ans;
   for (size_t i = 0; i < free.size(); i++) {

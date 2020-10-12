@@ -161,8 +161,11 @@ bool ContinueOptimized(vector<double> &coef) {
 
 vector<double> DoAnswer(vector<vector<int>> &variables, vector<double> &free) {
   vector<double> ans;
-  for (size_t i = 0; i < variables.size(); i++) {
-    ans.push_back(variables[i][0] * free[variables[i][1]]);
+  for (size_t i = 0; i < free.size(); i++) {
+    for (size_t j = 0; j < free.size(); j++) {
+      if (i == variables[j][2])
+        ans.push_back(variables[i][0] * free[variables[j][1]]);
+    }
   }
   return ans;
 }
@@ -185,7 +188,7 @@ std::pair<double, vector<double>> SimplexMethod(vector<double> &forcheck) {
   coeffs = {-7, -4, -4};
   freedom = {3, 3, 5};
   max = true;
-  forcheck=coeffs;
+  forcheck = coeffs;
   if (max) for (size_t t = 0; t < coeffs.size(); t++) forcheck[t] = -coeffs[t];
   /*  matrix = {{4, 2, 1},
            {3, 1, 3},
