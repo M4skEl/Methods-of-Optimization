@@ -174,7 +174,7 @@ vector<double> DoAnswer(vector<vector<int>> variables, vector<double> &free) {
   for (size_t i = 0; i < free.size(); i++) {
     for (size_t j = 0; j < free.size(); j++) {
       if (i == variables[j][2])
-        ans.push_back(variables[i][0] * free[variables[i][1]]);
+        ans.push_back(variables[i][0] * free[variables[j][1]]);
     }
   }
   return ans;
